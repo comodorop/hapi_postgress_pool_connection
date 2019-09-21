@@ -1,7 +1,7 @@
 const { Pool } = require('pg')
 // function connection() {
     const pool = new Pool({
-        database: 'wsmijail',
+        database: 'adc_hapi',
         host: 'localhost',
         user: 'root',
         password: '123456',

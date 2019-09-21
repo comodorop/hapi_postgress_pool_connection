@@ -10,15 +10,7 @@ const courses = [
   {
     method: 'POST',
     path: '/api/courses',
-    handler: handlers.createCourse,
-    options: {
-      validate: {
-        payload: courseSchema.create,
-        failAction: (request, h, error) => {
-          throw error
-        }
-      }
-    }
+    handler: handlers.createCourse
   }
 ]
 

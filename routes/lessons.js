@@ -20,15 +20,6 @@ const lessons = [
     method: 'POST',
     path: '/api/courses/{courseId}/lessons',
     handler: handlers.createLesson,
-    options: {
-      validate: {
-        payload: schema.createPayload,
-        params: schema.courseIdParam,
-        failAction: (request, h, error) => {
-          throw error
-        }
-      }
-    }
   }
 ]
 
